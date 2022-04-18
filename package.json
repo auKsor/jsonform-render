@@ -1,0 +1,30 @@
+{
+  "name": "jsonform-render",
+  "version": "0.0.0",
+  "files": ["dist"],
+  "main": "./dist/jsonform-render.umd.js",
+  "module": "./dist/jsonform-render.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/jsonform-render.es.js",
+      "require": "./dist/jsonform-render.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@jsonforms/core": "^3.0.0-beta.1",
+    "@jsonforms/vue": "^3.0.0-beta.1",
+    "@jsonforms/vue-vanilla": "^3.0.0-beta.1",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
